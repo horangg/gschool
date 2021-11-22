@@ -1,7 +1,169 @@
-.bluebox{
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+
+.nanumgothiccoding * {
+ font-family: 'Nanum Gothic Coding', monospace;
+}
+
+* {
+  font-family: 'SpoqaHanSansNeo-Regular';
+  font-size: 15px;
+  margin: 0px;
+  padding: 0px;
+}
+
+::selection{
+  background-color: #c4c4c4;
+  color: whitesmoke;
+}
+
+.logo-tittle span{
+  font-family: 'Nanum Gothic Coding', monospace;
+  font-size: 27px;
+  letter-spacing: 0px;
+  font-weight: bold;
+  font-style: normal;
+  color:#212121;
+  line-height: inherit;
+  cursor: pointer;
+}
+
+
+.navbar{
   display: flex;
-  flex-direction: row;
-  background-color: blue;
+  padding: 0 100px;
+  height: 97.5px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.navbar-list span a{
+  padding: 0 12px;
+  color: #212121;
+  text-decoration: none;
+}
+
+.navbar-list span :hover{
+  color:#2C44AA;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.wldnjs{
+box-sizing: border-box;
+margin:0px 0px 0px 5px;
+padding: 6px 26px;
+border: 1px solid gray;
+font-size: 13px;
+color: gray;
+text-decoration-line: none;
+}
+
+.wldnjs:hover{
+  background-color: #2C44AA;
   color: white;
-  margin: 10px;
+  transition: 0.3s;
+  border: 1px solid #2C44AA;
+  text-decoration-line: none;
+  cursor: pointer;
+}
+
+.video {
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#videoIFrame {
+ width: 100vw;
+ height: 100vw;
+}
+
+.main-box{
+  height:206px;
+  width: 1368px;
+  background-color:#ffffff;
+}
+
+.tittle-box{
+  position: relative;
+  top: 15px;
+  width: 1040px;
+  height: 55px;
+  padding: 0px 12px;
+}
+
+h6{
+  position: relative;
+  top: 15px;
+  width: 1016px;
+  height: 32px;
+  margin: 10px 0px;
+}
+
+.tittle-txt{
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.main-txt {
+    position: relative;
+  top: 10px;
+  width: 1040px;
+  height: 71px;
+  padding: 0px 12px;
+}
+
+.main-txt p{
+  font-size: 14px;
+  color: #212121;
+  margin: 5px 0px;
+}
+
+.box-box{
+  width: 100%;
+  height: 249.5px;
+  display:flex;
+  justify-content: center
+}
+
+.box{
+  height: 171.5px;
+  width: 298.66px;
+  padding: 24px;
+  color: #ffffff;
+  background-color: #2C44AA;
+  cursor: pointer;
+}
+
+#blue-box{
+  background-color: #001255;
+}
+
+.bold{
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.box-text{
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.more{
+  font-size: 12px;
+}
+
+.nav{
+font-size: 10px;
 }
