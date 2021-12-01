@@ -40,3 +40,29 @@ function scrollTop(elem, duration) {
   });
 }
 
+//클릭시 영상->이미지 변경
+
+//src = "https://player.vimeo.com/video/427031436?title=0&muted=1&autoplay=1&autopause=0&controls=0&loop=1&background=1&app_id=122963&autoplay=1";
+//src = "https://i.pinimg.com/originals/21/38/48/2138481810d8fa9b472af4cbf70b1733.jpg"
+
+$(function () {
+  setIFrame();
+
+  $("[name-contents]").keyup(function () {
+    setIFrame();
+  });
+});
+
+function setIFrame() {
+  var iFrame = document.getElementById('videoIFrame');
+  var iFramedoc = iFrame.document;
+  if (iFrame.contentDocument) {
+    iFramedoc = iFrame.contentDocument;
+  } else if (iFrame.contentWindow) {
+    iFramedoc = iFrame.contentWindow.document;
+  }
+  if (iFramedoc) {
+    iFramedoc.open();
+
+  }
+}
